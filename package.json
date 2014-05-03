@@ -1,0 +1,12 @@
+{
+  "name": "building",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node building.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "1.1.5"
+  }
+}
