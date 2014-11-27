@@ -13,11 +13,9 @@ app.use(express.session({secret: 'woietohgklags'}));
 app.use(express.methodOverride());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/*
-app.get('/', function(req, res) {
-  res.render('index.jade');
+app.get('/*', function(req, res) {
+  return res.redirect('/');
 });
-//*/
 
 app.start = function() {
   app.listen(app.get('port'), function() {
